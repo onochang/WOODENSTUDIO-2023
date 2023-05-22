@@ -1,0 +1,32 @@
+// variables.scssを読みこむ。
+@use 'variables' as *;
+
+body{
+    color: $text-1;
+    font-family: $lora, $serif, $sans, serif;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+p{
+    font-size: 14px;
+}
+
+span{
+    display: inline-block;
+    font-size: 16px;
+}
+
+li{
+    list-style: none;
+}

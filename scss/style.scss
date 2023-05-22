@@ -1,0 +1,77 @@
+@use 'reset';
+@use 'variables' as *;
+@use 'common';
+
+.main-visual{
+    height: 100vh;
+    width: 100%;
+    background: url(../img/photo01.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    padding: 0 40px;
+
+    &__logo{
+        width: 120px;
+    }
+
+    &-nav{
+        display: flex;
+        align-items: center;
+        column-gap: 56px;
+    }
+
+    &-menu{
+        display: flex;
+        column-gap: 56px;
+
+        &__link{
+            font-family: $lora;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    .fa-instagram{
+        font-size: 20px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    height: 42px;
+    width: 207px;
+    border-radius: 4px;
+    font-family: $sans;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+
+    .fa-envelope {
+        position: relative;
+        top: 2px;
+        margin-right: 7px;
+        font-size: 20px;
+    }
+
+}
+
+.btn--primary {
+    background-color: $main;
+    color: $text-2;
+    transition: all 1s ease;
+    
+    &:hover{
+        position: relative;
+        top: 2px;
+        background-color: $base-1;
+        color: $main;
+    }
+}
+
