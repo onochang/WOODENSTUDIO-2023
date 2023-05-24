@@ -30,3 +30,18 @@ span{
 li{
     list-style: none;
 }
+
+.section{
+    padding: 180px 0;
+}
+
+.contents-container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    &--wide{
+        width: 100%;
+        max-width: initial;
+    }
+}

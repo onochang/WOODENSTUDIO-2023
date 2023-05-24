@@ -1,0 +1,50 @@
+@use 'variables' as *;
+
+.section-head{
+    margin-bottom: 72px;
+
+    &__small{
+        margin-bottom: 1em;
+        font-size: 16px;
+    }
+
+    &__large{
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &--gold{
+        color: $main;
+    }
+}
+
+.btn {
+    display: inline-block;
+    height: 42px;
+    width: 207px;
+    border-radius: 4px;
+    font-family: $sans;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+
+    .fa-envelope {
+        position: relative;
+        top: 2px;
+        margin-right: 7px;
+        font-size: 20px;
+    }
+
+    &--primary {
+        background-color: $main;
+        color: $text-2;
+        transition: all 1s ease;
+        
+        &:hover{
+            position: relative;
+            top: 2px;
+            background-color: $base-1;
+            color: $main;
+        }
+    }
+}
