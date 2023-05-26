@@ -658,7 +658,7 @@ li {
   font-weight: 500;
   margin-bottom: 9px;
 }
-.news-article_excerpt {
+.news-article__excerpt {
   line-height: 1.5;
 }
 .news .btn-wrap {
