@@ -1,5 +1,22 @@
 @use 'variables' as *;
 
+.navigation{
+        display: flex;
+        align-items: center;
+        column-gap: 56px;
+
+        &-menu{
+            display: flex;
+            column-gap: 56px;
+    
+            &__link{
+                font-family: $lora;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+}
+
 .section-head{
     margin-bottom: 72px;
 
@@ -35,16 +52,35 @@
         font-size: 20px;
     }
 
-    &--primary {
-        background-color: $main;
-        color: $text-2;
-        transition: all 1s ease;
-        
-        &:hover{
-            position: relative;
-            top: 2px;
-            background-color: $base-1;
-            color: $main;
+    &-primary{
+        &--gold {
+            background-color: $main;
+            color: $text-2;
+            transition: all 1s ease;
+            
+            &:hover{
+                position: relative;
+                top: 2px;
+                background-color: $base-1;
+                color: $main;
+            }
         }
     }
+
+    &-secondary{
+        &--gold{
+            border: 1px solid $main;
+            color: $main;
+            transition: all 1s ease;
+
+            &:hover{
+                position: relative;
+                top: 2px;
+                border: none;
+                background-color: $main;
+                color: $text-2;
+            }
+        }
+    }
+
 }
